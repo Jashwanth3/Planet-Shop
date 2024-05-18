@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: white;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2c2c2c;
+        }
+        header {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            border-bottom: 1px solid black;
+        }
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+        ul li a {
+            padding: 10px 20px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 50px;
+            padding: 20px 0;
+        }
+        .planet-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .planet-section img {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+        .contentleft, .contentmid, .contentright {
+            flex: 1;
+            padding: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .btn {
+            padding: 15px 30px;
+            color: black;
+            background: white;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #2c2c2c;
+            color: white;
+            border: 2px solid white;
+        }
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+        .signup {
+            background-color: white;
+            color: black;
+        }
+        .signup:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="solar.jpg" alt="Planet Store"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Mercury</h2>
+            </div>
+            <div class="contentmid">
+                <p>Mercury, the innermost planet of the solar system and the eighth in size and mass. Its closeness to the Sun and its smallness make it the most elusive of the planets visible to the unaided eye. Because its rising or setting is always within about two hours of the Sun’s, it is never observable when the sky is fully dark. Mercury is designated by the symbol ☿. <br>
+                    Mercury is the closest planet to the Sun, at a distance of 57.91 million kilometers / 35.98 miles or 0.4 AU away. It takes sunlight 3.2 minutes to travel from the Sun to Mercury.
+                </p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="mercury.jpg" alt="Mercury">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Venus</h2>
+            </div>
+            <div class="contentmid">
+                <p>Venus, the second planet from the Sun, is the hottest planet in the solar system. Its thick, toxic atmosphere traps heat in a runaway greenhouse effect, making surface temperatures reach 475°C (900°F). Venus is similar in size and structure to Earth but has a vastly different climate.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="venus.jpg" alt="Venus">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Earth</h2>
+            </div>
+            <div class="contentmid">
+                <p>Earth, the third planet from the Sun, is the only place known to harbor life. It has a diverse climate and terrain, supporting various ecosystems. Earth's atmosphere is primarily nitrogen and oxygen, providing the right conditions for life as we know it.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="earth.jpg" alt="Earth">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Mars</h2>
+            </div>
+            <div class="contentmid">
+                <p>Mars, the fourth planet from the Sun, is known as the Red Planet due to its reddish appearance, which is caused by iron oxide (rust) on its surface. Mars has the largest volcano in the solar system, Olympus Mons, and a canyon system, Valles Marineris, that dwarfs the Grand Canyon.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="mars.jpg" alt="Mars">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Jupiter</h2>
+            </div>
+            <div class="contentmid">
+                <p>Jupiter, the fifth planet from the Sun, is the largest planet in the solar system. It is a gas giant with a thick atmosphere primarily composed of hydrogen and helium. Jupiter is known for its Great Red Spot, a persistent anticyclonic storm larger than Earth.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="jupiter.jpg" alt="Jupiter">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Saturn</h2>
+            </div>
+            <div class="contentmid">
+                <p>Saturn, the sixth planet from the Sun, is famous for its prominent ring system composed of ice particles, dust, and rocky debris. It is a gas giant like Jupiter and has numerous moons, with Titan being the largest. Saturn's rings are its most distinctive feature.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="saturn.jpg" alt="Saturn">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Uranus</h2>
+            </div>
+            <div class="contentmid">
+                <p>Uranus, the seventh planet from the Sun, is an ice giant with a unique feature: its axis of rotation is tilted sideways, causing it to appear to roll on its side as it orbits the Sun. Uranus has a pale blue color due to the presence of methane in its atmosphere.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="uranus.jpg" alt="Uranus">
+            </div>
+        </div>
+        <div class="planet-section">
+            <div class="contentleft">
+                <h2>Neptune</h2>
+            </div>
+            <div class="contentmid">
+                <p>Neptune, the eighth and farthest planet from the Sun, is a dynamic world with high-speed winds and storm systems, including the famous Great Dark Spot. It is similar in composition to Uranus and is often referred to as an ice giant.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="neptune.jpg" alt="Neptune">
+            </div>
+        </div>
+        </main>
+        </body>
+        </html>
+        
